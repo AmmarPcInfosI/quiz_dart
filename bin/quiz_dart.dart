@@ -26,8 +26,8 @@ void main() {
   double mark=0;
   List<Map> quizq=[q1,q2,q3];
   quizq.forEach((element) {
-    ques=element['question'];
-    print("$i:$ques");
+    // ques=element['question'];
+    print("$i:${element['question']}");
     ans=stdin.readLineSync();
     if (ans==element['answer']){
       print("correct answer");
