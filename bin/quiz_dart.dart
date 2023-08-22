@@ -22,11 +22,9 @@ void main() {
   };
   int i=1;
   String? ans='';
-  String? ques="";
   double mark=0;
   List<Map> quizq=[q1,q2,q3];
   quizq.forEach((element) {
-    // ques=element['question'];
     print("$i:${element['question']}");
     ans=stdin.readLineSync();
     if (ans==element['answer']){
